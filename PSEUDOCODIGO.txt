@@ -1,0 +1,29 @@
+BUSQUEDA SECUENCIAL 
+
+Procedimiento busqueda_secuencial(arreglo, numero)
+    Para i = 0 Hasta la longitud de arreglo
+        Si arreglo[i] == numero Entonces
+            Devolver i
+        Fin Si
+    Fin Para
+    Devolver -1
+Fin Procedimiento
+
+
+BUSQUEDA BINARIA 
+
+Procedimiento busqueda_binaria(arreglo, numero)
+    inicio = 0
+    fin = longitud(arreglo) - 1
+    mientras inicio <= fin Hacer
+        medio = (inicio + fin) / 2
+        Si arreglo[medio] == numero Entonces
+            Devolver medio
+        Sino Si arreglo[medio] < numero Entonces
+            inicio = medio + 1
+        Sino
+            fin = medio - 1
+        Fin Si
+    Fin Mientras
+    Devolver -1
+Fin Procedimiento
